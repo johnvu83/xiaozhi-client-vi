@@ -9,7 +9,7 @@ class DiscoveryScreen extends StatelessWidget {
       children: [
         AppBar(
           title: const Text(
-            '发现',
+            'Khám phá',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 28,
@@ -32,7 +32,7 @@ class DiscoveryScreen extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.fromLTRB(20, 16, 20, 16),
                   child: Text(
-                    '实用工具',
+                    'Công cụ tiện ích',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class DiscoveryScreen extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.fromLTRB(20, 16, 20, 16),
                   child: Text(
-                    '精选推荐',
+                    'Gợi ý nổi bật',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -77,14 +77,14 @@ class DiscoveryScreen extends StatelessWidget {
       children: [
         _buildFeatureCard(
           context,
-          '阅读助手',
-          '高效理解和总结文章',
+          'Trợ lý đọc sách',
+          'Tóm tắt và hiểu nhanh nội dung',
           Icons.menu_book_outlined,
           const Color(0xFFFF6D00),
           onTap: () {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(
-                content: Text('阅读助手功能开发中...'),
+                content: Text('Tính năng Trợ lý đọc sách đang phát triển...'),
                 duration: Duration(seconds: 2),
               ),
             );
@@ -92,14 +92,14 @@ class DiscoveryScreen extends StatelessWidget {
         ),
         _buildFeatureCard(
           context,
-          '翻译工具',
-          '多语言实时翻译',
+          'Công cụ dịch thuật',
+          'Dịch thuật đa ngôn ngữ thời gian thực',
           Icons.translate_outlined,
           const Color(0xFF2979FF),
           onTap: () {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(
-                content: Text('翻译工具功能开发中...'),
+                content: Text('Tính năng Dịch thuật đang phát triển...'),
                 duration: Duration(seconds: 2),
               ),
             );
@@ -107,14 +107,14 @@ class DiscoveryScreen extends StatelessWidget {
         ),
         _buildFeatureCard(
           context,
-          '语音助手',
-          '智能语音交互',
+          'Trợ lý giọng nói',
+          'Tương tác giọng nói thông minh',
           Icons.mic_outlined,
           const Color(0xFF6200EA),
           onTap: () {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(
-                content: Text('语音助手功能开发中...'),
+                content: Text('Tính năng Trợ lý giọng nói đang phát triển...'),
                 duration: Duration(seconds: 2),
               ),
             );
@@ -122,14 +122,14 @@ class DiscoveryScreen extends StatelessWidget {
         ),
         _buildFeatureCard(
           context,
-          '文档解析',
-          '智能分析文档内容',
+          'Phân tích tài liệu',
+          'Phân tích thông minh nội dung văn bản',
           Icons.description_outlined,
           const Color(0xFF00BFA5),
           onTap: () {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(
-                content: Text('文档解析功能开发中...'),
+                content: Text('Tính năng Phân tích tài liệu đang phát triển...'),
                 duration: Duration(seconds: 2),
               ),
             );
@@ -219,22 +219,22 @@ class DiscoveryScreen extends StatelessWidget {
         children: [
           _buildRecommendationCard(
             context,
-            'AI写作助手',
-            '让你的文章更专业',
+            'Trợ lý viết AI',
+            'Giúp bài viết chuyên nghiệp hơn',
             'assets/images/writing.png',
             const Color(0xFFE91E63),
           ),
           _buildRecommendationCard(
             context,
-            '智能提醒',
-            '不错过重要事项',
+            'Nhắc nhở thông minh',
+            'Không bỏ lỡ các việc quan trọng',
             'assets/images/reminder.png',
             const Color(0xFF4CAF50),
           ),
           _buildRecommendationCard(
             context,
-            '语音笔记',
-            '随时随地记录灵感',
+            'Ghi chú giọng nói',
+            'Ghi lại ý tưởng mọi lúc mọi nơi',
             'assets/images/voice_note.png',
             const Color(0xFF3F51B5),
           ),
@@ -273,7 +273,7 @@ class DiscoveryScreen extends StatelessWidget {
             onTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('$title 功能开发中...'),
+                  content: Text('Tính năng $title đang phát triển...'),
                   duration: const Duration(seconds: 2),
                 ),
               );
