@@ -1137,7 +1137,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     if (minimaxConfigs.isEmpty)
                       const Padding(
                         padding: EdgeInsets.all(16),
-                        child: Center(child: Text('暂无MiniMax配置，点击右上角添加')),
+                        child: Center(child: Text('Chưa có cấu hình MiniMax, bấm góc phải để thêm')),
                       )
                     else
                       ...minimaxConfigs.map(
@@ -1333,7 +1333,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            '添加MiniMax配置',
+                            'Thêm cấu hình MiniMax',
                             style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -1355,7 +1355,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       ),
                       const SizedBox(height: 8),
                       const Text(
-                        '添加新的MiniMax AI配置',
+                        'Thêm cấu hình MiniMax AI mới',
                         style: TextStyle(color: Colors.grey, fontSize: 14),
                       ),
                       const SizedBox(height: 24),
@@ -1376,7 +1376,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         child: TextField(
                           controller: nameController,
                           decoration: InputDecoration(
-                            hintText: '例如：MiniMax AI',
+                            hintText: 'Ví dụ: MiniMax AI',
                             hintStyle: TextStyle(color: Colors.grey.shade400),
                             contentPadding: const EdgeInsets.symmetric(
                               horizontal: 16,
@@ -1405,7 +1405,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                           controller: apiKeyController,
                           obscureText: true,
                           decoration: InputDecoration(
-                            hintText: '输入MiniMax API Key',
+                            hintText: 'Nhập MiniMax API Key',
                             hintStyle: TextStyle(color: Colors.grey.shade400),
                             contentPadding: const EdgeInsets.symmetric(
                               horizontal: 16,
@@ -1417,7 +1417,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       ),
                       const SizedBox(height: 16),
                       const Text(
-                        '模型',
+                        'Mô hình',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
@@ -1478,7 +1478,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                           Navigator.of(context).pop();
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: const Text('已添加MiniMax配置'),
+                              content: const Text('Đã thêm cấu hình MiniMax'),
                               backgroundColor: Colors.green.shade600,
                               behavior: SnackBarBehavior.floating,
                               shape: RoundedRectangleBorder(
@@ -1562,7 +1562,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            '编辑MiniMax配置',
+                            'Chỉnh sửa cấu hình MiniMax',
                             style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -1631,7 +1631,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       ),
                       const SizedBox(height: 16),
                       const Text(
-                        '模型',
+                        'Mô hình',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
@@ -1699,7 +1699,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                           Navigator.of(context).pop();
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: const Text('已更新MiniMax配置'),
+                              content: const Text('Đã cập nhật cấu hình MiniMax'),
                               backgroundColor: Colors.green.shade600,
                               behavior: SnackBarBehavior.floating,
                               shape: RoundedRectangleBorder(
@@ -1776,7 +1776,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text(
-                        '删除MiniMax配置',
+                        'Xóa cấu hình MiniMax',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -1808,7 +1808,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         const SizedBox(width: 12),
                         Expanded(
                           child: Text(
-                            '确定要删除"${config.name}"配置吗？',
+                            'Bạn có chắc chắn muốn xóa cấu hình "${config.name}"?',
                             style: TextStyle(
                               fontSize: 16,
                               color: Colors.red.shade900,
@@ -2216,12 +2216,12 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      '添加新的小智语音服务配置',
+                      'Thêm cấu hình dịch vụ thoại Xiaozhi mới',
                       style: TextStyle(color: Colors.grey, fontSize: 14),
                     ),
                     const SizedBox(height: 24),
                     const Text(
-                      '服务名称',
+                      'Tên dịch vụ',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -2245,7 +2245,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       child: TextField(
                         controller: nameController,
                         decoration: InputDecoration(
-                          hintText: '例如：家庭小智',
+                          hintText: 'Ví dụ: Xiaozhi Xe hơi',
                           hintStyle: TextStyle(color: Colors.grey.shade400),
                           contentPadding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -2257,7 +2257,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 16),
                     const Text(
-                      'WebSocket地址',
+                      'Địa chỉ WebSocket',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -2281,7 +2281,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       child: TextField(
                         controller: websocketUrlController,
                         decoration: InputDecoration(
-                          hintText: '例如：wss://example.com',
+                          hintText: 'Ví dụ: wss://api.xiaozhi.me',
                           hintStyle: TextStyle(color: Colors.grey.shade400),
                           contentPadding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -2296,7 +2296,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          'MAC地址 (可选)',
+                          'Địa chỉ MAC (Tùy chọn)',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
@@ -2323,7 +2323,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         enabled: true,
                         controller: macAddressController,
                         decoration: InputDecoration(
-                          hintText: '留空将自动生成',
+                          hintText: 'Để trống để tự động tạo',
                           hintStyle: TextStyle(color: Colors.grey.shade400),
                           contentPadding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -2335,7 +2335,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 4),
                     const Text(
-                      '留空将根据设备ID自动生成',
+                      'Để trống sẽ tự động tạo theo ID thiết bị',
                       style: TextStyle(color: Colors.grey, fontSize: 12),
                     ),
                     const SizedBox(height: 16),
@@ -2359,7 +2359,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: const Text(
-                            '默认开启',
+                            'Bật mặc định',
                             style: TextStyle(color: Colors.grey, fontSize: 14),
                           ),
                         ),
@@ -2402,7 +2402,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         if (name.isEmpty || websocketUrl.isEmpty) {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: const Text('请填写所有必填字段'),
+                              content: const Text('Vui lòng điền đầy đủ các trường bắt buộc'),
                               backgroundColor: Colors.red.shade600,
                               behavior: SnackBarBehavior.floating,
                               shape: RoundedRectangleBorder(
@@ -2427,7 +2427,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         Navigator.pop(context);
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
-                            content: const Text('小智服务已添加'),
+                            content: const Text('Đã thêm dịch vụ Xiaozhi'),
                             backgroundColor: Colors.green.shade600,
                             behavior: SnackBarBehavior.floating,
                             shape: RoundedRectangleBorder(
@@ -2521,7 +2521,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          '编辑小智服务',
+                          'Chỉnh sửa dịch vụ Xiaozhi',
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
@@ -2537,12 +2537,12 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      '修改小智语音服务配置',
+                      'Sửa cấu hình dịch vụ thoại Xiaozhi',
                       style: TextStyle(color: Colors.grey, fontSize: 14),
                     ),
                     const SizedBox(height: 24),
                     const Text(
-                      '服务名称',
+                      'Tên dịch vụ',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -2566,7 +2566,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       child: TextField(
                         controller: nameController,
                         decoration: InputDecoration(
-                          hintText: '例如：家庭小智',
+                          hintText: 'Ví dụ: Xiaozhi Xe hơi',
                           hintStyle: TextStyle(color: Colors.grey.shade400),
                           contentPadding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -2578,7 +2578,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 16),
                     const Text(
-                      'WebSocket地址',
+                      'Địa chỉ WebSocket',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -2602,7 +2602,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       child: TextField(
                         controller: websocketUrlController,
                         decoration: InputDecoration(
-                          hintText: '例如：wss://example.com',
+                          hintText: 'Ví dụ: wss://api.xiaozhi.me',
                           hintStyle: TextStyle(color: Colors.grey.shade400),
                           contentPadding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -2614,7 +2614,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 16),
                     const Text(
-                      'MAC地址',
+                      'Địa chỉ MAC',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -2631,7 +2631,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         controller: macAddressController,
                         enabled: true,
                         decoration: InputDecoration(
-                          hintText: '留空将自动生成',
+                          hintText: 'Để trống để tự động tạo',
                           hintStyle: TextStyle(color: Colors.grey.shade400),
                           contentPadding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -2643,7 +2643,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 4),
                     const Text(
-                      '留空将根据设备ID自动生成',
+                      'Để trống sẽ tự động tạo theo ID thiết bị',
                       style: TextStyle(color: Colors.grey, fontSize: 12),
                     ),
                     const SizedBox(height: 16),
@@ -2667,7 +2667,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: const Text(
-                            '默认开启',
+                            'Bật mặc định',
                             style: TextStyle(color: Colors.grey, fontSize: 14),
                           ),
                         ),
@@ -2710,7 +2710,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         if (name.isEmpty || websocketUrl.isEmpty) {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: const Text('请填写所有必填字段'),
+                              content: const Text('Vui lòng điền đầy đủ các trường bắt buộc'),
                               backgroundColor: Colors.red.shade600,
                               behavior: SnackBarBehavior.floating,
                               shape: RoundedRectangleBorder(
@@ -2740,7 +2740,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         Navigator.pop(context);
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
-                            content: const Text('小智服务已更新'),
+                            content: const Text('Đã cập nhật dịch vụ Xiaozhi'),
                             backgroundColor: Colors.green.shade600,
                             behavior: SnackBarBehavior.floating,
                             shape: RoundedRectangleBorder(
@@ -2826,7 +2826,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          '删除小智服务',
+                          'Xóa dịch vụ Xiaozhi',
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
@@ -2842,7 +2842,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      '确定要删除 ${config.name} 吗？',
+                      'Bạn có chắc chắn muốn xóa ${config.name}?',
                       style: const TextStyle(fontSize: 16),
                     ),
                     const SizedBox(height: 24),
@@ -2856,7 +2856,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         Navigator.pop(context);
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
-                            content: const Text('小智服务已删除'),
+                            content: const Text('Đã xóa dịch vụ Xiaozhi'),
                             backgroundColor: Colors.green.shade600,
                             behavior: SnackBarBehavior.floating,
                             shape: RoundedRectangleBorder(

@@ -470,7 +470,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             const SizedBox(width: 8),
                             Text(
-                              'Bấm + để tạo cuộc trò chuyện mới',
+                              'Bấm + để bắt đầu',
                               style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.grey.shade500,
@@ -626,7 +626,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       title: Text(
-                        conversation.isPinned ? '取消置顶' : 'Ghim cuộc trò chuyện',
+                        conversation.isPinned ? 'Bỏ ghim' : 'Ghim cuộc trò chuyện',
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w600,

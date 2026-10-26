@@ -171,7 +171,7 @@ class MessageBubble extends StatelessWidget {
     if (message.imageLocalPath != null && message.imageLocalPath!.isNotEmpty) {
       final imageFile = File(message.imageLocalPath!);
       if (!imageFile.existsSync()) {
-        return _buildImagePlaceholder(isUser, "图片已被删除");
+        return _buildImagePlaceholder(isUser, "Hình ảnh đã bị xóa");
       }
 
       return Column(
@@ -185,12 +185,13 @@ class MessageBubble extends StatelessWidget {
               width: 200,
               fit: BoxFit.cover,
               errorBuilder: (context, error, stackTrace) {
-                print('图片加载失败: $error');
-                return _buildImagePlaceholder(isUser, "图片加载失败");
+                print('Không tải được hình ảnh: $error');
+                return _buildImagePlaceholder(isUser, "Không tải được hình ảnh");
               },
             ),
           ),
           if (message.content.isNotEmpty &&
+              !message.content.startsWith("[Đang tải ảnh lên") &&
               !message.content.startsWith("[图片上传中"))
             Padding(
               padding: const EdgeInsets.only(top: 8, left: 8, right: 8),
