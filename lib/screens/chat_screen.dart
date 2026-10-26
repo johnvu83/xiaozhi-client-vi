@@ -1186,7 +1186,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       _showCustomSnackbar('Đã bắt đầu cuộc trò chuyện mới');
     } else {
-      _showCustomSnackbar('配置未设置，无法重置对话');
+      _showCustomSnackbar('Chưa thiết lập cấu hình, không thể đặt lại cuộc trò chuyện');
     }
   }
 
@@ -1299,7 +1299,7 @@ class _ChatScreenState extends State<ChatScreen> {
       await conversationProvider.addMessage(
         conversationId: widget.conversation.id,
         role: MessageRole.assistant,
-        content: '发生错误: ${e.toString()}',
+        content: 'Đã xảy ra lỗi: ${e.toString()}',
       );
     } finally {
       if (!mounted) return;
@@ -1702,10 +1702,10 @@ class _ChatScreenState extends State<ChatScreen> {
       await conversationProvider.addMessage(
         conversationId: widget.conversation.id,
         role: MessageRole.assistant,
-        content: '图片上传失败: ${e.toString()}',
+        content: 'Không thể tải ảnh lên: ${e.toString()}',
       );
 
-      _showCustomSnackbar('图片上传失败: ${e.toString()}');
+      _showCustomSnackbar('Không thể tải ảnh lên: ${e.toString()}');
     } finally {
       setState(() {
         _isLoading = false;
